@@ -1,0 +1,305 @@
+@font-face 
+{
+    font-family: customfont;
+    src: url('Roboto-Thin.ttf');
+}
+@font-face 
+{
+    font-family: welcome-msg;
+    src: url('Cinzel-Regular.ttf');
+}
+@font-face {
+    font-family: title-font;
+    src: url('teen.otf');
+}
+@font-face {
+    font-family: stylish;
+    src: url('Fonstars-4Bo0p.otf');
+}
+@font-face 
+{
+    font-family: change-text;
+    src: url('Cocogoose-Compressed-Regular-Trial.ttf');
+}
+@font-face {
+    font-family: iam-font;
+    src: url('Cocogoose-Condensed-Thin-trial.ttf');
+}
+body
+{
+    background-color: black;
+    cursor: url('icons8-select-cursor-48.png'), auto;
+}
+.nav-bar
+{
+    border:1px solid black;
+    height: 14vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: -6px;
+    left: 0;
+    z-index: 1;
+}
+.navigations a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin-left: 7vh;
+    font-weight: bold;
+    font-family: customfont,'sans-serif';
+}
+.navigations a:hover
+{
+    border: 1px solid rgb(74, 189, 235);
+    padding: 8px;
+}
+.nav-bar h2
+{
+    font-size: 2.5rem;
+    color: white;
+    font-family: stylish,'sans-serif';
+    margin-left: 4vh;
+    margin-top: 4vh;
+}
+.navigations
+{
+    margin-left: 68%;
+    margin-top: -10vh;
+}
+.welcome-msg-container .welcome-msg h2
+{
+    color: white;
+}
+
+.welcome-msg-container .welcome-msg
+{
+    text-align: center;
+    justify-content: center;
+    margin-top: 35vh;
+    font-family: welcome-msg,'sans-serif';
+    font-size: 2.5rem;
+}
+button
+{
+    padding: 20px;
+    border-color: white;
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+    border-radius: 30px;
+}
+button:hover
+{
+    background-color: white;
+    color: black;
+    border-color: black;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 0 10px 5px white;
+    font-family: customfont,'sans-serif';
+}
+.about-dhanush img
+{
+    height: 50vh;
+    margin-top: 10vh;
+    margin-left: 7vh;
+}
+.about-dhanush h1
+{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 35vh;
+    font-family: title-font,'sans-serif';
+}
+.about-dhanush p 
+{
+    color: white;
+    font-size: 1.2rem;
+    margin-left: 45%;
+    margin-top: -50vh;
+    font-family: customfont,'sans-serif';
+}
+.achivements h1
+{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-family: title-font,'sans-serif';
+    margin-top: 20vh;
+}
+.achivements img
+{
+    height: 55vh;
+    margin-left: 70%;
+    margin-top: 3vh;
+    opacity: 0.8;
+}
+.achivements .links
+{
+    color: white;
+    font-size: 1.2rem;
+    font-family: customfont,'sans-serif';
+    margin-top: -55vh;
+    margin-left: 5vh;
+}
+.each-links
+{
+    margin-left: 20vh;
+    margin-top: 5vh;
+    color: white;
+    font-family: customfont,'sans-serif';
+}
+.each-links a 
+{
+    color: blue;
+}
+.each-links a:hover
+{
+    color: rgb(153, 58, 153);
+}
+.qualification h1
+{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 23vh;
+    font-family: title-font,'sans-serif';
+}
+.qualification img
+{
+    height: 60vh;
+    margin-top: 10vh;
+    margin-left: 7vh;
+    opacity: 0.8;
+}
+.pass
+{
+    color: white;
+    margin-top: -60vh;
+    margin-left: 90vh;
+    font-size: 1.5rem;
+    font-family: customfont,'sans-serif';
+}
+.languages
+{
+    margin-left: 90vh;
+    margin-top: 10vh;
+    color: white;
+    font-size: 1.2rem;
+    font-family: customfont,'sans-serif';
+}
+.lang
+{
+    color: white;
+    font-size: 1.6rem;
+    font-family: customfont,'sans-serif';
+    margin-left: 60vh;
+}
+.contact-me h1
+{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-family: title-font,'sans-serif';
+    margin-top: 20vh;
+}
+.contact-me img
+{
+    height: 55vh;
+    border-radius: 100%;
+    margin-left: 70%;
+    margin-top: -34vh;
+}
+.contact-me h2
+{
+    font-size: 2.5rem;
+    color: rgb(74, 189, 235);
+    margin-left: 18vh;
+    font-family: iam-font,'sans-serif';
+}
+.contact-me p
+{
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 0vh;
+    position: absolute;
+    font-family: change-text;
+}
+.change-text
+{
+    margin-left: 10vh;
+    margin-top: 10vh;
+}
+.contact-me h3
+{
+    color: white;
+    font-size: 1.6rem;
+    margin-left: 5vh;
+    font-family: customfont,'sans-serif';
+}
+.social-media-icons-container img
+{
+    height: 8vh;
+}
+.social-media-icons-container
+{
+    margin-top: 10vh;
+    margin-left: 20vh;
+}
+.social-media-icons-container a 
+{
+    display: inline-block;
+    margin-left: 25px;
+}
+.social
+{
+    margin-top: 10vh;
+    margin-left: 10vh;
+}
+.social-media-icons-container img:hover
+{
+    height: 8.5vh;
+}
+.our-services-container h1
+{
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-family: title-font,'sans-serif';
+    margin-top: 20vh;
+}
+.services-images img
+{
+    height: 30vh;
+    margin-left: 25vh;
+}
+.services-images
+{
+    margin-top: 10vh;
+    margin-left: 7vh;
+    display: flex;
+}
+.services-images p 
+{
+    color: white;
+    margin-left: 33vh;
+    font-size: 1.5rem;
+    font-family: customfont,'sans-serif';
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-bar h2
+    {
+        font-size: 1.8rem;
+        margin-left: 25px;
+    }
+    .navigations
+    {
+        display: none;
+    }
+}
+
+

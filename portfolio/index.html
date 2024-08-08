@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dhanush Portfolio</title>
+    
+</head>
+<body>
+    <div class="nav-bar">
+        <h2>Dhanush</h2>
+        <div class="navigations">
+            <a href="#">Home</a>
+            <a id="scrollButton">About</a>
+            <a id="contactButton">Contact Me</a>
+        </div>
+    </div>
+    <div class="welcome-msg-container">
+        <div class="welcome-msg">
+            <h2>Welcome To <br> Dhanush Portfolio</h2>
+            <div class="swipe-button">
+                <button onclick="scrollToBottomWithTiming()">Click For Preview</button>
+            </div>
+        </div>
+    </div>
+    <div class="about-dhanush">
+        <h1>About Dhanush</h1>
+        <div class="image">
+            <img src="InShot_20240314_102618698.jpg" alt="dhanush-photo">
+        </div>
+        <p>My name is Dhanush, and I am currently in my second year of studies at NTTF. My journey in education began at SBVM School, where I completed my 10th grade qualification. With a passion for technology and a drive to excel, my goal is to secure a position at a reputable company where I can leverage my skills and knowledge to contribute meaningfully while making my parents proud. Throughout my academic journey, I have honed various skills, including proficiency in programming languages, project management, and effective teamwork, which I have put into practice through collaborative projects such as developing online shopping websites and showroom projects with my peers. Additionally, I have actively pursued extracurricular activities, further enriching my holistic development. As I look towards the future, I am excited to continue expanding my skills, pursuing new opportunities, and ultimately achieving my career</p>
+    </div>
+    <div class="achivements">
+        <h1>Achivements</h1>
+        <img src="achivement.png" alt="Nec0822009">
+        <p class="links">I have made some Interactive websites</p>
+        <div class="each-links">
+        <p>Kaveri: <a href="https://kolapasi.netlify.app/">https://kaverishopping1.netlify.app/</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Online Groceries Website)</p>
+        <p>Kola Pasi: <a href="https://kolapasi.netlify.app/">https://kolapasi.netlify.app/</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Online food shopping Website)</p>
+        <p>Drag Papers: <a href="https://kolapasi.netlify.app/">https://dragingpapers.netlify.app/ </a>&nbsp;&nbsp;&nbsp;&nbsp;(Drag the Papers Game)</p>
+        <p>IPhone Online: <a href="https://iphoneonline.netlify.app/">https://iphoneonline.netlify.app/</a>&nbsp;&nbsp;&nbsp;&nbsp;(Online Iphone)</p>
+        <p>Car Showroom: <a href="https://carshowroom10.netlify.app/">https://carshowroom10.netlify.app/</a>&nbsp;&nbsp;&nbsp;&nbsp;(Car Showroom)</p>
+        <p>Chrome Startup: <a href="https://chrome-startup01.netlify.app/">https://chrome-startup01.netlify.app/</a>&nbsp;&nbsp;&nbsp;&nbsp;(Chrome Startup)</p>
+        </div>
+    </div>
+    <div class="qualification">
+        <h1>Qualification</h1>
+        <img src="NEC0822009.JPG" alt="photo">
+        <p class="pass">I Am 10th Passed</p>
+        <p class="lang">Languages Learned</p>
+        <div class="languages">
+        <ul>
+            <li>C</li>
+            <li>C++</li>
+            <li>HTML &nbsp;(Expert)</li>
+            <li>CSS &nbsp;(Expert)</li>
+            <li>Java &nbsp;(Beginner)</li>
+            <li>JavaScript &nbsp;(Beginner)</li>
+            <li>SQL &nbsp;(Beginner)</li>
+            <li>Python &nbsp;(Beginnner)</li>
+        </ul>
+        </div>
+    </div>
+    <div class="our-services-container">
+        <h1>My Services</h1>
+        <div class="services-images">
+            <div>
+                <img src="development.png" alt="development">
+                <p>Development</p>
+            </div>
+            <div>
+                <img src="front-end.png" alt="front-end">
+                <p>Front-End</p>
+            </div>
+            <div>
+                <img src="backend.png" alt="backend">
+                <p>Back-End</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="contact-me">
+        <h1>Contact Me</h1>
+        <div class="change-text">
+        <p>I Am a<h2 id="role">Student</h2></p>
+        </div>
+        <div class="social">
+        <h3>On Social Media :</h3>
+        <div class="social-media-icons-container">
+            <a href="www.instagram.com"><img src="instagram.png" alt="instagram">
+            <a href="#"><img src="facebook.png" alt="facebook"></a>
+            <a href="#"><img src="twitter.png" alt="twitter"></a>
+            <a href="#"><img src="telegram.png" alt="telegram"></a>
+        </div>
+        </div>
+        <img src="fotor-2024031419916.png" alt="circle-image">
+    </div>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("scrollButton").addEventListener("click", function() 
+            {   
+                window.scrollTo({
+                    top: window.pageYOffset + 780,
+                    behavior: 'smooth'
+                });
+            });
+    
+            // Update the event listener for the "Contact Me" button
+            document.getElementById("contactButton").addEventListener("click", function() {
+                const contactSection = document.querySelector(".contact-me");
+                const contactOffset = contactSection.offsetTop; // Calculate the offset dynamically
+    
+                window.scrollTo({
+                    top: contactOffset,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    
+        window.onload = function() {
+            setTimeout(changeRole,1000);
+        }
+    
+        var roles = ["Student", "Developer", "Web Designer", "Trainee"];
+        var currentRoleIndex = 0;
+    
+        function changeRole() {
+            document.getElementById('role').innerHTML = roles[currentRoleIndex];
+            currentRoleIndex = (currentRoleIndex + 1) % roles.length; 
+            setTimeout(changeRole, 2000); 
+        }
+    
+        function scrollToBottomWithTiming() {
+            const duration = 2000;
+            const startTime = performance.now();
+            const startOffset = window.pageYOffset;
+            const distance = document.body.scrollHeight - window.innerHeight;
+    
+            function scrollStep(timestamp) {
+                const progress = Math.min((timestamp - startTime) / duration, 1);
+                window.scrollTo(0, startOffset + distance * progress);
+    
+                if (progress < 1) {
+                    requestAnimationFrame(scrollStep);
+                }
+            }
+    
+            requestAnimationFrame(scrollStep);
+        }
+    </script>
+    
+</body>
+</html>
